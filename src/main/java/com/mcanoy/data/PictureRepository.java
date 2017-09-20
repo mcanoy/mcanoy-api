@@ -23,4 +23,7 @@ public interface PictureRepository extends PagingAndSortingRepository<Picture, L
     
     @RestResource(path = "pictureSetId", rel = "pictureSetId")
     public Page<Picture> findByPictureSetId(@Param("set") long pictureSetId, Pageable pageable);
+    
+    @RestResource(path = "name", rel = "pictureSetName")
+    public Page<Picture> findByPictureSetName(@Param("name") String pictureSetName, Pageable pageable);
 }

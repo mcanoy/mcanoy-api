@@ -43,7 +43,7 @@ public class Picture {
     private int sequence;
     private String type;
     private String info;
-    private float ratio;
+    private Float ratio;
     
     @Column(name = "URL_SQUARE")
     private String urlSquare;
