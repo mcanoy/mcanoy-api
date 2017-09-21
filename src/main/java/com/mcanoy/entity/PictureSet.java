@@ -36,8 +36,14 @@ public class PictureSet {
     @Column(name = "LAST_MODIFIED_DATE")
     private Date lastModifiedDate;
     
+    @Column(name = "DISPLAY_DATE")
+    private Date displayDate;
+    
     @Column(name = "SET_THUMBNAIL")
     private String thumbnail;
+    
+    @Column(name = "BOX_THUMB")
+    private String boxThumbnail;
     private String directory;
     //private Set<Picture> pictures;
     private Long sequence;
